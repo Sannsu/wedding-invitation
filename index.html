@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#ffffff">
+
+    <title>
+        မင်္ဂလာသတင်း | ဒေါက်တာနေလင်း နှင့် ဒေါက်တာဆန်းဆုဆုရည်
+    </title>
+
+
+    <!-- =========================================
+         မြန်မာစာလုံး
+    ========================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="
+        https://fonts.googleapis.com/css2?
+        family=Noto+Serif+Myanmar:wght@400;500;600&
+        family=Noto+Sans+Myanmar:wght@300;400;500;600&
+        display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           အခြေခံသတ်မှတ်ချက်များ
+        ====================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            background: #ffffff;
+
+            color: #555555;
+
+            font-family:
+                'Noto Sans Myanmar',
+                sans-serif;
+
+            line-height: 1.8;
+
+            overflow-x: hidden;
+
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        section {
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* =====================================================
+           အရောင်များ
+        ====================================================== */
+
+        :root {
+
+            --white: #ffffff;
+
+            --ivory: #fcfbf9;
+
+            --pearl: #f3f0ec;
+
+            --pearl-dark: #d9d5cf;
+
+            --silver: #b9b7b4;
+
+            --silver-light: #e8e6e3;
+
+            --text: #555555;
+
+            --dark: #3f3f3f;
+
+        }
+
+
+
+        /* =====================================================
+           ပုလဲလေးများ
+        ====================================================== */
+
+        .pearl {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle at 30% 25%,
+                    #ffffff 0%,
+                    #ffffff 20%,
+                    #f1eeea 50%,
+                    #d8d3cd 100%
+                );
+
+            box-shadow:
+
+                0 3px 12px
+                rgba(100,100,100,0.12),
+
+                inset
+                1px 1px 4px
+                rgba(255,255,255,0.9);
+
+            animation:
+                floatingPearl
+                7s
+                ease-in-out
+                infinite;
+
+            z-index: 1;
+
+        }
+
+
+        .pearl-1 {
+
+            width: 14px;
+            height: 14px;
+
+            top: 12%;
+            left: 8%;
+
+        }
+
+
+        .pearl-2 {
+
+            width: 8px;
+            height: 8px;
+
+            top: 24%;
+            right: 10%;
+
+            animation-delay: 1s;
+
+        }
+
+
+        .pearl-3 {
+
+            width: 18px;
+            height: 18px;
+
+            top: 55%;
+            left: 5%;
+
+            animation-delay: 2s;
+
+        }
+
+
+        .pearl-4 {
+
+            width: 10px;
+            height: 10px;
+
+            top: 68%;
+            right: 7%;
+
+            animation-delay: 3s;
+
+        }
+
+
+        .pearl-5 {
+
+            width: 12px;
+            height: 12px;
+
+            bottom: 15%;
+            left: 14%;
+
+            animation-delay: 4s;
+
+        }
+
+
+        .pearl-6 {
+
+            width: 7px;
+            height: 7px;
+
+            bottom: 18%;
+            right: 18%;
+
+            animation-delay: 2.5s;
+
+        }
+
+
+        @keyframes floatingPearl {
+
+            0% {
+
+                transform:
+                    translate(0, 0);
+
+            }
+
+            50% {
+
+                transform:
+                    translate(8px, -20px);
+
+            }
+
+            100% {
+
+                transform:
+                    translate(0, 0);
+
+            }
+
+        }
+
+
+
+        /* =====================================================
+           Section အတွက်
+        ====================================================== */
+
+        .section {
+
+            padding:
+                90px 22px;
+
+        }
+
+
+        .container {
+
+            max-width: 900px;
+
+            margin: auto;
+
+        }
+
+
+        .section-label {
+
+            text-align: center;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            color: #aaa;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(30px, 7vw, 48px);
+
+            font-weight: 500;
+
+            color: var(--dark);
+
+            line-height: 1.5;
+
+        }
+
+
+
+        /* =====================================================
+           ပုလဲ Divider
+        ====================================================== */
+
+        .pearl-divider {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            margin: 25px auto 35px;
+
+        }
+
+
+        .pearl-divider::before,
+        .pearl-divider::after {
+
+            content: "";
+
+            width: 65px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    to right,
+                    transparent,
+                    #d5d2ce
+                );
+
+        }
+
+
+        .pearl-divider::after {
+
+            background:
+                linear-gradient(
+                    to left,
+                    transparent,
+                    #d5d2ce
+                );
+
+        }
+
+
+        .mini-pearl {
+
+            width: 8px;
+
+            height: 8px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle at 30% 25%,
+                    #fff,
+                    #ddd
+                );
+
+            box-shadow:
+                0 2px 6px
+                rgba(0,0,0,.12);
+
+        }
+
+
+
+        /* =====================================================
+           ၁။ ဖွင့်စာမျက်နှာ
+        ====================================================== */
+
+        .opening {
+
+            min-height: 100svh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    #ffffff 0%,
+                    #fcfbf9 55%,
+                    #f3f0ec 100%
+                );
+
+        }
+
+
+        .opening::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 88%;
+
+            height: 88%;
+
+            border:
+                1px solid
+                rgba(190,190,190,.35);
+
+            border-radius: 50%;
+
+        }
+
+
+        .opening-content {
+
+            position: relative;
+
+            z-index: 5;
+
+            animation:
+                fadeInUp
+                1.8s ease;
+
+        }
+
+
+        @keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        .opening-subtitle {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 15px;
+
+            color: #999;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .opening-small {
+
+            font-size: 10px;
+
+            letter-spacing: 3px;
+
+            color: #aaa;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .couple-name {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(38px, 10vw, 72px);
+
+            font-weight: 500;
+
+            color: #3f3f3f;
+
+            line-height: 1.8;
+
+        }
+
+
+        .and-symbol {
+
+            display: block;
+
+            font-size: 32px;
+
+            color: #aaa;
+
+            line-height: 1;
+
+            margin: 8px 0;
+
+        }
+
+
+        .opening-date {
+
+            margin-top: 25px;
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            color: #888;
+
+        }
+
+
+        .open-button {
+
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding:
+                12px 28px;
+
+            border:
+                1px solid #c5c2be;
+
+            background:
+                rgba(255,255,255,.8);
+
+            color: #777;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+            transition: .4s;
+
+        }
+
+
+        .open-button:hover {
+
+            background: #555;
+
+            color: white;
+
+            border-color: #555;
+
+        }
+
+
+
+        /* =====================================================
+           ၂။ မင်္ဂလာကဗျာ
+        ====================================================== */
+
+        .poem-section {
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffffff,
+                    #faf9f7,
+                    #ffffff
+                );
+
+            text-align: center;
+
+        }
+
+
+        .poem-frame {
+
+            position: relative;
+
+            max-width: 720px;
+
+            margin: auto;
+
+            padding:
+                55px 35px;
+
+            border:
+                1px solid
+                #e5e2de;
+
+            background:
+                rgba(255,255,255,.8);
+
+        }
+
+
+        .poem-frame::before,
+        .poem-frame::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 55px;
+
+            height: 55px;
+
+            border:
+                1px solid
+                #ddd9d4;
+
+        }
+
+
+        .poem-frame::before {
+
+            top: -8px;
+
+            left: -8px;
+
+            border-right: none;
+
+            border-bottom: none;
+
+        }
+
+
+        .poem-frame::after {
+
+            bottom: -8px;
+
+            right: -8px;
+
+            border-left: none;
+
+            border-top: none;
+
+        }
+
+
+        .poem-title {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 25px;
+
+            color: #555;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .poem {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(14px, 3.8vw, 17px);
+
+            line-height: 2.35;
+
+            color: #666;
+
+        }
+
+
+        .poem-line {
+
+            display: block;
+
+        }
+
+
+
+        /* =====================================================
+           ၃။ မင်္ဂလာသတင်း
+        ====================================================== */
+
+        .announcement {
+
+            text-align: center;
+
+            background: #ffffff;
+
+        }
+
+
+        .announcement-text {
+
+            max-width: 680px;
+
+            margin: auto;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 15px;
+
+            line-height: 2.4;
+
+            color: #666;
+
+        }
+
+
+        .announcement-highlight {
+
+            margin-top: 30px;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 19px;
+
+            color: #777;
+
+        }
+
+
+
+        /* =====================================================
+           ၄။ မောင်နှံဓာတ်ပုံ
+        ====================================================== */
+
+        .photo-section {
+
+            padding: 25px;
+
+            background: #f7f5f2;
+
+        }
+
+
+        .photo-frame {
+
+            position: relative;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 10px;
+
+            background: white;
+
+            box-shadow:
+                0 15px 45px
+                rgba(0,0,0,.07);
+
+        }
+
+
+        .photo-frame img {
+
+            width: 100%;
+
+            height: 620px;
+
+            object-fit: cover;
+
+        }
+
+
+
+        /* =====================================================
+           ၅။ မင်္ဂလာရက်မြတ်
+        ====================================================== */
+
+        .date-section {
+
+            text-align: center;
+
+            background: #ffffff;
+
+        }
+
+
+        .date-number {
+
+            margin-top: 20px;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(55px, 13vw, 95px);
+
+            font-weight: 400;
+
+            color: #777;
+
+            line-height: 1.3;
+
+        }
+
+
+        .date-text {
+
+            margin-top: 8px;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 16px;
+
+            color: #888;
+
+        }
+
+
+
+        /* =====================================================
+           ၆။ Countdown
+        ====================================================== */
+
+        .countdown-section {
+
+            background: #f8f6f3;
+
+            text-align: center;
+
+        }
+
+
+        .countdown {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-top: 35px;
+
+        }
+
+
+        .countdown-item {
+
+            min-width: 65px;
+
+        }
+
+
+        .countdown-number {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 35px;
+
+            color: #666;
+
+        }
+
+
+        .countdown-label {
+
+            font-size: 9px;
+
+            color: #999;
+
+        }
+
+
+
+        /* =====================================================
+           ၇။ မင်္ဂလာအချက်အလက်
+        ====================================================== */
+
+        .details {
+
+            background: white;
+
+        }
+
+
+        .details-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin-top: 45px;
+
+        }
+
+
+        .detail-card {
+
+            text-align: center;
+
+            padding: 35px 15px;
+
+            border:
+                1px solid #ece9e5;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #faf9f7
+                );
+
+        }
+
+
+        .detail-icon {
+
+            font-size: 22px;
+
+            color: #aaa;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .detail-label {
+
+            font-size: 11px;
+
+            color: #999;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .detail-value {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 18px;
+
+            color: #555;
+
+        }
+
+
+
+        /* =====================================================
+           ၈။ မင်္ဂလာနေရာ
+        ====================================================== */
+
+        .venue {
+
+            text-align: center;
+
+            background: #faf9f7;
+
+        }
+
+
+        .venue-name {
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(27px, 7vw, 40px);
+
+            color: #555;
+
+            margin-top: 15px;
+
+        }
+
+
+        .venue-address {
+
+            max-width: 550px;
+
+            margin:
+                12px auto 30px;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 14px;
+
+            color: #777;
+
+        }
+
+
+        .map-button {
+
+            display: inline-block;
+
+            padding:
+                12px 28px;
+
+            border:
+                1px solid #aaa;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 11px;
+
+            color: #666;
+
+            transition: .3s;
+
+        }
+
+
+        .map-button:hover {
+
+            background: #555;
+
+            color: white;
+
+        }
+
+
+
+        /* =====================================================
+           ၉။ အမှတ်တရ
+        ====================================================== */
+
+        .story {
+
+            text-align: center;
+
+            background: white;
+
+        }
+
+
+        .story-text {
+
+            max-width: 680px;
+
+            margin: auto;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 15px;
+
+            line-height: 2.4;
+
+            color: #666;
+
+        }
+
+
+
+        /* =====================================================
+           ၁၀။ ဓာတ်ပုံများ
+        ====================================================== */
+
+        .gallery {
+
+            background: #f7f5f2;
+
+        }
+
+
+        .gallery-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 40px;
+
+        }
+
+
+        .gallery-item {
+
+            background: white;
+
+            padding: 6px;
+
+        }
+
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 360px;
+
+            object-fit: cover;
+
+        }
+
+
+
+        /* =====================================================
+           ၁၁။ အဆုံးသတ်
+        ====================================================== */
+
+        .closing {
+
+            min-height: 70vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    #ffffff,
+                    #f2efeb
+                );
+
+        }
+
+
+        .closing-names {
+
+            margin-top: 20px;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size:
+                clamp(35px, 9vw, 62px);
+
+            color: #444;
+
+        }
+
+
+        .closing-message {
+
+            max-width: 650px;
+
+            margin:
+                30px auto 0;
+
+            font-family:
+                'Noto Serif Myanmar',
+                serif;
+
+            font-size: 14px;
+
+            line-height: 2.4;
+
+            color: #666;
+
+        }
+
+
+        .heart {
+
+            margin-top: 25px;
+
+            font-size: 25px;
+
+            color: #aaa;
+
+        }
+
+
+
+        /* =====================================================
+           MUSIC BUTTON
+        ====================================================== */
+
+        .music-button {
+
+            position: fixed;
+
+            right: 18px;
+
+            bottom: 18px;
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid #d0cdca;
+
+            background:
+                rgba(255,255,255,.96);
+
+            color: #777;
+
+            cursor: pointer;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,.08);
+
+            font-size: 16px;
+
+        }
+
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 700px) {
+
+
+            .section {
+
+                padding:
+                    70px 18px;
+
+            }
+
+
+            .opening {
+
+                min-height:
+                    100svh;
+
+            }
+
+
+            .opening::before {
+
+                width: 92%;
+
+                height: 90%;
+
+            }
+
+
+            .couple-name {
+
+                font-size: 43px;
+
+            }
+
+
+            .poem-frame {
+
+                padding:
+                    45px 20px;
+
+            }
+
+
+            .poem {
+
+                font-size: 14px;
+
+                line-height: 2.25;
+
+            }
+
+
+            .photo-frame img {
+
+                height: 500px;
+
+            }
+
+
+            .details-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .countdown {
+
+                gap: 10px;
+
+            }
+
+
+            .countdown-item {
+
+                min-width: 58px;
+
+            }
+
+
+            .countdown-number {
+
+                font-size: 30px;
+
+            }
+
+
+            .gallery-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .gallery-item img {
+
+                height: 400px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ပုလဲလေးများ
+    ====================================================== -->
+
+    <div class="pearl pearl-1"></div>
+
+    <div class="pearl pearl-2"></div>
+
+    <div class="pearl pearl-3"></div>
+
+    <div class="pearl pearl-4"></div>
+
+    <div class="pearl pearl-5"></div>
+
+    <div class="pearl pearl-6"></div>
+
+
+
+    <!-- =====================================================
+         ၁။ ဖွင့်စာမျက်နှာ
+    ====================================================== -->
+
+    <section class="opening">
+
+
+        <div class="opening-content">
+
+
+            <div class="opening-small">
+
+                မင်္ဂလာသတင်း
+
+            </div>
+
+
+            <div class="opening-subtitle">
+
+                ဘဝတစ်လျှောက် အတူလက်တွဲရန်
+
+            </div>
+
+
+            <!-- ===============================
+                 သတို့သား / သတို့သမီးအမည်
+            ================================= -->
+
+            <div class="couple-name">
+
+                ဒေါက်တာနေလင်း
+
+                <span class="and-symbol">
+                    နှင့်
+                </span>
+
+                ‌ဒေါက်တာဆန်းဆုဆုရည်
+
+            </div>
+
+
+            <!-- ===============================
+                 ရက်စွဲ
+            ================================= -->
+
+            <div class="opening-date">
+
+                ၂၂ · ၁၁ · ၂၀၂၆
+
+            </div>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+            <a
+                href="#poem"
+                class="open-button">
+
+                ဖိတ်စာဖွင့်ရန်
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၂။ မင်္ဂလာကဗျာ
+    ====================================================== -->
+
+    <section
+        class="section poem-section"
+        id="poem">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာစကား
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                မင်္ဂလာပန်း
+
+            </h2>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+            <div class="poem-frame">
+
+
+                <!-- ===============================
+                     မူရင်းကဗျာ
+                ================================= -->
+
+                <div class="poem">
+
+
+                    <span class="poem-line">
+                        နေမင်းသဘာ အစွမ်းမျိုး
+                    </span>
+
+
+                    <span class="poem-line">
+                        လမင်းဆာယာ စခန်းတိုးလို့
+                    </span>
+
+
+                    <span class="poem-line">
+                        ရိုကျိုး ခိုကိုး
+                    </span>
+
+
+                    <span class="poem-line">
+                        အမျိုးမျိုး အလှအပ
+                    </span>
+
+
+                    <span class="poem-line">
+                        သဘာဝပန်းခိုင်
+                    </span>
+
+
+                    <span class="poem-line">
+                        ထာဝရလှမ်းကိုင်
+                    </span>
+
+
+                    <span class="poem-line">
+                        မယိုင်မလဲ အလင်းဓာတ်ဆန်းကို
+                    </span>
+
+
+                    <span class="poem-line">
+                        ခိုင်မြဲတဲ့ ချစ်သဒ္ဓါလွှမ်းပြီး
+                    </span>
+
+
+                    <span class="poem-line">
+                        မေတ္တာလန်း ဆုပန်ခြွေ
+                    </span>
+
+
+                    <span class="poem-line">
+                        သစ္စာပန်း ခုကုဋာကုဋေ။ ။
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၃။ မင်္ဂလာသတင်း အသိပေးခြင်း
+    ====================================================== -->
+
+    <section
+        class="section announcement">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာသတင်း
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                မင်္ဂလာဆောင်ကြတော့မည်
+
+            </h2>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+            <!-- ===============================
+                 အသိပေးစာသား
+            ================================= -->
+
+            <div class="announcement-text">
+
+
+                ကျွန်တော် ကျွန်မတို့နှစ်ဦး၏ ဘဝသစ်ကို
+                အတူတကွ စတင်တော့မည့်အကြောင်းကို
+                ချစ်ခင်ရသူများအား
+                ဝမ်းမြောက်စွာ အသိပေးမျှဝေလိုက်ပါသည်။
+
+
+                <br><br>
+
+
+                မိသားစု၊ မိတ်ဆွေများနှင့်
+                ချစ်ခင်ရသူများ၏
+                မေတ္တာနှင့် ဆုမွန်ကောင်းများကြားတွင်
+                ကျွန်တော်ကျွန်မတို့၏ မင်္ဂလာနေ့ရက်လေးကို
+                စတင်လိုပါသည်။
+
+
+            </div>
+
+
+            <div class="announcement-highlight">
+
+                မင်္ဂလာသတင်းလေးကို
+                အမှတ်တရအဖြစ် မျှဝေလိုက်ပါသည်။
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၄။ မောင်နှံဓာတ်ပုံ
+    ====================================================== -->
+
+    <section class="photo-section">
+
+
+        <div class="photo-frame">
+
+
+            <!-- ===============================
+                 ဒီနေရာမှာ မောင်နှံဓာတ်ပုံထည့်ပါ
+            ================================= -->
+
+            <img
+                src="images/couple-1.jpg"
+                alt="မောင်နှံဓာတ်ပုံ">
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၅။ မင်္ဂလာရက်မြတ်
+    ====================================================== -->
+
+    <section
+        class="section date-section">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာရက်မြတ်
+
+            </div>
+
+
+            <!-- ===============================
+                 ရက်စွဲ
+            ================================= -->
+
+            <div class="date-number">
+
+                ၀၀ · ၀၀
+
+            </div>
+
+
+            <div class="date-text">
+
+                ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ ၂၂ ရက်
+
+            </div>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၆။ Countdown
+    ====================================================== -->
+
+    <section
+        class="section countdown-section">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာနေ့အထိ
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                ရေတွက်နေပါပြီ
+
+            </h2>
+
+
+            <div class="countdown">
+
+
+                <div class="countdown-item">
+
+                    <div
+                        class="countdown-number"
+                        id="days">
+
+                        ၀၀
+
+                    </div>
+
+                    <div class="countdown-label">
+
+                        ရက်
+
+                    </div>
+
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <div
+                        class="countdown-number"
+                        id="hours">
+
+                        ၀၀
+
+                    </div>
+
+                    <div class="countdown-label">
+
+                        နာရီ
+
+                    </div>
+
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <div
+                        class="countdown-number"
+                        id="minutes">
+
+                        ၀၀
+
+                    </div>
+
+                    <div class="countdown-label">
+
+                        မိနစ်
+
+                    </div>
+
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <div
+                        class="countdown-number"
+                        id="seconds">
+
+                        ၀၀
+
+                    </div>
+
+                    <div class="countdown-label">
+
+                        စက္ကန့်
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၇။ မင်္ဂလာအချက်အလက်
+    ====================================================== -->
+
+    <section
+        class="section details">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာပွဲအကြောင်း
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                မင်္ဂလာအချက်အလက်များ
+
+            </h2>
+
+
+            <div class="details-grid">
+
+
+                <!-- ရက်စွဲ -->
+
+                <div class="detail-card">
+
+
+                    <div class="detail-icon">
+
+                        ♡
+
+                    </div>
+
+
+                    <div class="detail-label">
+
+                        ရက်စွဲ
+
+                    </div>
+
+
+                    <!-- EDIT -->
+
+                    <div class="detail-value">
+
+                        ၂၀၂၆ ခုနှစ်၊
+                        နိုဝင်ဘာလ [၂၂] ရက်
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- အချိန် -->
+
+                <div class="detail-card">
+
+
+                    <div class="detail-icon">
+
+                        ♡
+
+                    </div>
+
+
+                    <div class="detail-label">
+
+                        အချိန်
+
+                    </div>
+
+
+                    <!-- EDIT -->
+
+                    <div class="detail-value">
+
+                        နံနက် ၉ နာရီ မှ ၁၂ နာရီ အထိ 
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- နေရာ -->
+
+                <div class="detail-card">
+
+
+                    <div class="detail-icon">
+
+                        ♡
+
+                    </div>
+
+
+                    <div class="detail-label">
+
+                        နေရာ
+
+                    </div>
+
+
+                    <!-- EDIT -->
+
+                    <div class="detail-value">
+
+                        မင်္ဂလာခန်းမ
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၈။ မင်္ဂလာနေရာ
+    ====================================================== -->
+
+    <section
+        class="section venue">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မင်္ဂလာနေရာ
+
+            </div>
+
+
+            <!-- ===============================
+                 နေရာအမည်
+            ================================= -->
+
+            <div class="venue-name">
+
+                ဓမ္မဒူတဇေတဝန်တောရ ဆေကိန္ဒာရာမကျောင်းတိုက်
+
+            </div>
+
+
+            <!-- ===============================
+                 လိပ်စာ
+            ================================= -->
+
+            <div class="venue-address">
+
+                အောက်ဝါးနက်ချောင်းကျေးရွာ၊ မှော်ဘီမြို့နယ်
+
+            </div>
+
+
+            <!-- ===============================
+                 Google Maps Link
+            ================================= -->
+
+            <a
+                href="https://maps.google.com/"
+                target="_blank"
+                class="map-button">
+
+                မြေပုံကြည့်ရန်
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၉။ တို့နှစ်ဦး၏ အမှတ်တရ
+    ====================================================== -->
+
+    <section
+        class="section story">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                အမှတ်တရ
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                တို့နှစ်ဦး၏ အမှတ်တရ
+
+            </h2>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+            <!-- ===============================
+                 ကိုယ့်အကြောင်းအရာထည့်ရန်
+            ================================= -->
+
+            <div class="story-text">
+
+
+                တစ်ယောက်နဲ့တစ်ယောက် တွေ့ဆုံခဲ့ကြပြီး
+                အချိန်တွေကို အတူဖြတ်သန်းလာခဲ့ကြပါတယ်။
+
+
+                <br><br>
+
+
+                ပျော်ရွှင်မှုတွေ၊ အမှတ်တရတွေ၊
+                အခက်အခဲတွေကို အတူမျှဝေခဲ့ကြပြီး
+                အခုတော့ ဘဝရဲ့ နောက်ထပ်အခန်းတစ်ခန်းကို
+                အတူတကွ စတင်တော့မှာ ဖြစ်ပါတယ်။
+
+
+                <br><br>
+
+
+                ဒီလို အဓိပ္ပါယ်ရှိတဲ့နေ့လေးအကြောင်းကို
+                ချစ်ခင်ရသူများအား
+                အမှတ်တရအဖြစ်
+                အသိပေးမျှဝေလိုက်ပါတယ်။
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၁၀။ အမှတ်တရဓာတ်ပုံများ
+    ====================================================== -->
+
+    <section
+        class="section gallery">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                အမှတ်တရပုံရိပ်များ
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                ချစ်ခြင်း၏ အမှတ်တရများ
+
+            </h2>
+
+
+            <div class="gallery-grid">
+
+
+                <!-- ===============================
+                     ပုံ ၁
+                ================================= -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/couple-2.jpg"
+                        alt="အမှတ်တရဓာတ်ပုံ ၁">
+
+                </div>
+
+
+                <!-- ပုံ ၂ -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/couple-3.jpg"
+                        alt="အမှတ်တရဓာတ်ပုံ ၂">
+
+                </div>
+
+
+                <!-- ပုံ ၃ -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/couple-4.jpg"
+                        alt="အမှတ်တရဓာတ်ပုံ ၃">
+
+                </div>
+
+
+                <!-- ပုံ ၄ -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/couple-5.jpg"
+                        alt="အမှတ်တရဓာတ်ပုံ ၄">
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ၁၁။ အဆုံးသတ်
+    ====================================================== -->
+
+    <section
+        class="section closing">
+
+
+        <div class="container">
+
+
+            <div class="section-label">
+
+                မေတ္တာဖြင့်
+
+            </div>
+
+
+            <!-- ===============================
+                 အမည်
+            ================================= -->
+
+            <div class="closing-names">
+
+                သတို့သမီး နှင့် သတို့သား
+
+            </div>
+
+
+            <div class="pearl-divider">
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+                <span class="mini-pearl"></span>
+
+            </div>
+
+
+            <div class="closing-message">
+
+
+                ကျွန်တော်ကျွန်မတို့ရဲ့ မင်္ဂလာသတင်းလေးကို
+                အတူတကွ ဝမ်းမြောက်ပေးကြမည့်
+                မိသားစု၊ မိတ်ဆွေများနှင့်
+                ချစ်ခင်ရသူများအားလုံးကို
+                အထူးကျေးဇူးတင်ရှိပါသည်။
+
+
+                <br><br>
+
+
+                လူကြီးမင်းတို့၏ မေတ္တာ၊
+                ဆုမွန်ကောင်းနှင့်
+                ကောင်းချီးများသည်
+                ကျွန်တော်ကျွန်မတို့အတွက်
+                တန်ဖိုးမဖြတ်နိုင်သော
+                လက်ဆောင်မွန်များ ဖြစ်ပါသည်။
+
+            </div>
+
+
+            <div class="heart">
+
+                ♡
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         သီချင်းဖွင့် / ပိတ်
+    ====================================================== -->
+
+    <button
+        class="music-button"
+        id="musicButton"
+        onclick="toggleMusic()">
+
+        ♪
+
+    </button>
+
+
+
+    <!-- =====================================================
+         နောက်ခံတေးဂီတ
+    ====================================================== -->
+
+    <audio
+        id="weddingMusic"
+        loop>
+
+        <source
+            src="music/wedding-song.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           မြန်မာဂဏန်းပြောင်းရန်
+        ================================================== */
+
+        function toMyanmarNumber(number) {
+
+            const english =
+                [
+                    '0','1','2','3','4',
+                    '5','6','7','8','9'
+                ];
+
+            const myanmar =
+                [
+                    '၀','၁','၂','၃','၄',
+                    '၅','၆','၇','၈','၉'
+                ];
+
+
+            return String(number)
+                .split('')
+                .map(function(char) {
+
+                    const index =
+                        english.indexOf(char);
+
+                    return index >= 0
+                        ? myanmar[index]
+                        : char;
+
+                })
+                .join('');
+
+        }
+
+
+
+        /* =================================================
+           COUNTDOWN
+        ================================================== */
+
+
+        /*
+            ================================================
+            မင်္ဂလာရက် / အချိန်ကို ဒီနေရာမှာ ပြောင်းပါ။
+
+            ဥပမာ -
+
+            ၂၀၂၆ ခုနှစ်
+            ဩဂုတ်လ ၃၀ ရက်
+            နံနက် ၁၀ နာရီ
+
+            ဆိုရင် -
+
+            2026-08-30T10:00:00
+
+            ================================================
+        */
+
+
+        const weddingDate =
+            new Date(
+                "2026-08-30T10:00:00"
+            ).getTime();
+
+
+
+        function updateCountdown() {
+
+
+            const now =
+                new Date().getTime();
+
+
+            const distance =
+                weddingDate - now;
+
+
+            if (distance <= 0) {
+
+
+                document.getElementById(
+                    "days"
+                ).innerHTML = "၀၀";
+
+
+                document.getElementById(
+                    "hours"
+                ).innerHTML = "၀၀";
+
+
+                document.getElementById(
+                    "minutes"
+                ).innerHTML = "၀၀";
+
+
+                document.getElementById(
+                    "seconds"
+                ).innerHTML = "၀၀";
+
+
+                return;
+
+            }
+
+
+            const days =
+                Math.floor(
+                    distance /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+            const hours =
+                Math.floor(
+                    (distance %
+                    (1000 * 60 * 60 * 24))
+                    /
+                    (1000 * 60 * 60)
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (distance %
+                    (1000 * 60 * 60))
+                    /
+                    (1000 * 60)
+                );
+
+
+            const seconds =
+                Math.floor(
+                    (distance %
+                    (1000 * 60))
+                    / 1000
+                );
+
+
+            document.getElementById(
+                "days"
+            ).innerHTML =
+                toMyanmarNumber(days);
+
+
+            document.getElementById(
+                "hours"
+            ).innerHTML =
+                toMyanmarNumber(hours);
+
+
+            document.getElementById(
+                "minutes"
+            ).innerHTML =
+                toMyanmarNumber(minutes);
+
+
+            document.getElementById(
+                "seconds"
+            ).innerHTML =
+                toMyanmarNumber(seconds);
+
+        }
+
+
+        updateCountdown();
+
+
+        setInterval(
+            updateCountdown,
+            1000
+        );
+
+
+
+        /* =================================================
+           MUSIC
+        ================================================== */
+
+
+        const music =
+            document.getElementById(
+                "weddingMusic"
+            );
+
+
+        const musicButton =
+            document.getElementById(
+                "musicButton"
+            );
+
+
+        let isPlaying = false;
+
+
+        function toggleMusic() {
+
+
+            if (isPlaying) {
+
+
+                music.pause();
+
+
+                musicButton.innerHTML = "♪";
+
+
+                isPlaying = false;
+
+
+            } else {
+
+
+                music.play()
+                    .then(function() {
+
+                        musicButton.innerHTML = "❚❚";
+
+                        isPlaying = true;
+
+                    })
+                    .catch(function() {
+
+                        alert(
+                            "သီချင်းဖွင့်ရန် ခလုတ်ကို ထပ်မံနှိပ်ပေးပါ။"
+                        );
+
+                    });
+
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
